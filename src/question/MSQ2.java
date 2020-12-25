@@ -69,7 +69,7 @@ public class MSQ2 {
 		System.out.print("중복 제거 배열(정렬) : ");
 		for(int i : listArr) {
 			System.out.print(i + " ");
-		}
+		} 
 		
 //	    for(int i : setArr) {
 //	    	System.out.println(i + " ");

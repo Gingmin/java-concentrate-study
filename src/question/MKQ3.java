@@ -39,7 +39,7 @@ public class MKQ3 {
 		/* 4 */
 		StringBuilder sb = new StringBuilder();
 		StringBuilder A = new StringBuilder(arr[0]);
-		StringBuilder B = new StringBuilder(arr[1]);
+		StringBuilder B = new StringBuilder(arr[1]); 
 		
 		/* 5 */
 		sb.append(A).append(B);
