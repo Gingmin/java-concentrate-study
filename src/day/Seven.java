@@ -4,7 +4,7 @@ import java.sql.Date;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-public class seven {
+public class Seven {
 
 	public static void main(String[] args) {
 

@@ -16,9 +16,8 @@ import java.util.Set;
 import java.util.Stack;
 import java.util.TreeSet;
 
-import com.greedy.section01.list.vo.BookVO;
 
-public class eight {
+public class Eight {
 
 	public static void main(String[] args) {
 /*

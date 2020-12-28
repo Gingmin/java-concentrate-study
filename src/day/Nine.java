@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 
-public class nine {
+public class Nine {
 
 	public static void main(String[] args) {
 

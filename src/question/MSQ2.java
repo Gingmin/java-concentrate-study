@@ -47,7 +47,7 @@ public class MSQ2 {
 		/* 1~5 사이의 랜덤한 값이 10개 저장된 배열에서 중복된 값이 제거된 배열을 만들어주세요.
 			ex) [1, 3, 3, 2, 1, 1, 4, 5, 5, 1, 3] ->[1, 3, 2, 4, 5] */
 		System.out.println();
-		
+
 		Random random = new Random();
 
 		int[] arr = new int[10];
@@ -58,24 +58,68 @@ public class MSQ2 {
 		for(int i : arr) {
 			System.out.print(i + " ");
 		}
-		
+		System.out.println();
+
 		Set<Integer> setArr = new HashSet<Integer>();
 		for(int i : arr) {
 			setArr.add(i);
 		}
 		List<Integer> listArr = new ArrayList<Integer>(setArr);
 		Collections.sort(listArr);
-		
+
 		System.out.print("중복 제거 배열(정렬) : ");
 		for(int i : listArr) {
 			System.out.print(i + " ");
 		} 
+
+		/*===================================*/
+		System.out.println();
+		System.out.println();
+		int[] arr2 = new int[10];
+
+		for(int i = 0; i < arr.length; i++) {
+			int no2 = random.nextInt(5) + 1;
+			arr2[i] = no2;
+		}
 		
-//	    for(int i : setArr) {
-//	    	System.out.println(i + " ");
-//	    }
+		for(int i : arr2) {
+			System.out.print(i + " ");
+		}
+		System.out.println();
+
+		int[] temp = new int[5];
 		
+		for(int i : temp) {
+			System.out.print(i + " ");
+		}
+		System.out.println();
 		
+		int index = 0; 							// 4
+		for(int i = 0; i < arr2.length; i++) { //i = 8
+			boolean isNotSame = false;
+
+			for(int j = 0; j < temp.length; j++) { // 3 2 4 1 5
+				if(arr2[i] == temp[j]) {
+					isNotSame = true;
+				}
+			}
+			if(!isNotSame) {
+			  temp[index++] = arr2[i];
+			}
+		}
+		for(int i : temp) {
+			System.out.print(i + " ");
+		}
+
+
+
+
+
+		//	    for(int i : setArr) {
+		//	    	System.out.println(i + " ");
+		//	    }
+
+
 		/*
 		HashMap hmap = new HashMap();
 		for(int i = 0; i < arr.length; i++) {

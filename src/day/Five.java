@@ -1,6 +1,6 @@
 package day;
 
-public class five {
+public class Five {
 
 	public static void main(String[] args) {
 
